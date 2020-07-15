@@ -85,5 +85,40 @@ namespace ToDoList.Tests
       //Assert
       CollectionAssert.AreEqual(newList, result);
     }
+
+    [TestMethod]
+    public void FindItem_LocatesItemIndex_ItemList()
+    {
+      //Arrange
+      string description01 = "Walk the dog";
+      string description02 = "Wash the dishes";
+      Item newItem1 = new Item(description01);
+      Item newItem2 = new Item(description02);
+
+      //Act
+
+      int found = Item.FindItem("Walk the dog");
+
+      //Assert
+      Assert.AreEqual(0, found);
+    }
+    [TestMethod]
+    public void RemoveItem_RemovesItemFromList_ItemList()
+    {
+      //Arrange
+      string description01 = "Walk the dog";
+      string description02 = "Wash the dishes";
+      Item newItem1 = new Item(description01);
+      Item newItem2 = new Item(description02);
+
+      //Act
+      List<Item> result = Item.GetAll();
+      int found = Item.FindItem("Walk the dog");
+      Item.RemoveItem(found);
+      List<Item> alteredResult = Item.GetAll();
+
+      //Asert
+      CollectionAssert.AreNotEqual(alteredResult, result);
+    }
   }
 }

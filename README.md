@@ -19,7 +19,6 @@ _Description_
 ## Setup/Installation Requirements
 
 * _Clone or download this repository located at ***
-* __
 * _Run $ dotnet restore to download all dev dependencies_
 * _Run $ dotnet build to create project_
 
@@ -29,7 +28,7 @@ _No known bugs_
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_{Please contact me at with any known bugs or support issues.}_
 
 ## Technologies Used
 
@@ -38,4 +37,4 @@ _{Let people know what to do if they run into any issues or have questions, idea
 
 ### License
 
-*Copyright (c) 2020 **_Spencer Moody & Hannah Beinstein MIT_**
+*Copyright (c) 2020 **_Hannah Beinstein MIT License_**
